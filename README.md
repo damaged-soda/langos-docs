@@ -1,41 +1,32 @@
 # langos-docs
 
-langos 项目的**文档与知识库**，存放愿景蓝图、需求规格、设计决策 (ADR) 与领域知识。
+langos 项目的蓝图/规格/治理文档，运行时代码在 `../langos/`，本仓不在运行时最小集内。
 
-- **运行时最小集**：代码在 `../langos/`，运行时不强依赖本仓，仅在需要背景信息时读取。
-- **定位**：本仓是“蓝图”和“归档”，代码仓是“执行”。
+## 一句话 SOT（去哪找什么）
 
-当你想了解设计背景、规划新功能或记录关键决策时，请阅读或写入本仓。
+- 愿景/分层蓝图 → `blueprints/`（如 `meta-intro.md`、`vision.md`）
+- 文档分类/命名规则 → `meta/conventions.md`
+- doc_root 与运行时解耦原则 → `blueprints/meta-intro.md` + `specs/langos/langos-runtime-docs-decoupling-spec.md`
+- 仓库概览与导航 → `repos/`（如 `repos/langos.md`）
+- 需求/设计规格 → `specs/`（仓库专属可用子目录）
+- 项目计划/进展 → `projects/`
+- 架构决策时间线 → `adr/`
+- 术语/数据模型 → `domain/`
+- 历史归档 → `archive/`
 
----
+## 目录职责
 
-## 1. 目录结构与职责
+- `meta/`：docs 仓自身治理与规范（单一规范源）。
+- `blueprints/`：顶层愿景与分层蓝图。
+- `repos/`：目标仓库概览与导航，单文件形式 `repos/<name>.md`。
+- `specs/`：需求与设计规格；历史取舍不在此展开。
+- `projects/`：跨仓或阶段性项目目标、计划与进度。
+- `adr/`：架构决策记录，保留时间线。
+- `domain/`：术语表、数据模型等概念层信息。
+- `archive/`：完全退出主视野的归档，注明来源/替代。
 
-- `meta/`：**仓库规范**。如何分类文档、命名文件，以此目录下的 `conventions.md` 为准。
-- `blueprints/`：**顶层蓝图**。愿景、分层说明等宏观背景。
-- `repos/`：**项目索引**。各个目标仓库的简介与导航（如 `repos/langos.md`）。
-- `specs/`：**需求规格**。结构化的需求文档，作为开发的输入。
-- `projects/`：**项目文档**。跨仓或阶段性的项目计划、过程记录。
-- `adr/`：**决策记录**。架构决策记录 (ADR)，用于记录“为什么这么做”。
-- `domain/`：**领域知识**。术语表、数据模型等。
-- `archive/`：**归档**。已过时的历史文档。
+## 快速开始
 
-> 详细的命名与分类规则，请查阅 `meta/conventions.md`。
-
----
-
-## 2. 与代码仓 (langos) 的关系
-
-- **doc_root**：运行时通过配置指向本仓（或其他业务文档仓），用于获取上下文。
-- **工作流**：
-    1. 在本仓 (`specs/`) 梳理需求与规格；
-    2. 在本仓 (`adr/`) 记录关键技术决策（如有）；
-    3. 在代码仓 (`../langos/`) 执行协议、编写代码与落地。
-
----
-
-## 3. 快速开始
-
-- **新加入维护**：建议先看 `blueprints/vision.md`（愿景）和 `repos/langos.md`（内核概览）。
-- **查阅规范**：直接看 `meta/conventions.md`。
-- **日常开发**：根据你的任务，直接进入 `specs/` 写需求，或在 `projects/` 更新进度。
+- 新人建议先读 `meta/README.md` + `meta/conventions.md`。
+- 需要理解愿景/分层：`blueprints/meta-intro.md`、`blueprints/vision.md`。
+- 查内核规格/导航：`repos/langos.md` + `specs/langos/`。
