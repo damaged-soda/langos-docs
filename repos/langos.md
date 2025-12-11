@@ -54,6 +54,7 @@ langos/                  ← 代码仓：运行时/协议/必读规范
 
 - 业务文档目录（doc_root）通过配置指定，示例配置可见 `../langos/.langos-local.example.yaml`。
 - doc_root 可设置为 `../langos-docs/` 指向本仓，也可以指向其他 workspace（如 `../workspace-docs/`）。
+- doc_root 的目录结构/命名/分类规则以 doc_root 所在文档库的规范为准（例如 `langos-docs/meta/conventions.md` 为单一规范源），本文件不重复这些规则。
 - `repos/` 仅承载项目索引与简介，不放蓝图或规格；新增目标仓库时按 `repos/<name>.md` 形式补充。
 - 若需要理解设计思路或迭代规范，可按需参考 doc_root 下的蓝图与 specs；执行或落盘时以代码仓的运行时协议与规范为准。
 - 治理 langos 本身时（内核模式），可以把 `langos/` 当作目标 repo，把 doc_root（如 `../langos-docs/`）当作治理时参考的文档库，按“需求 → 方案 → 编码/落盘 → 评审”的流程小步推进。

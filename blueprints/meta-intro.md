@@ -60,6 +60,6 @@
 - 核心文件（docs 侧）：`meta/README.md`、`meta/conventions.md`、`blueprints/vision.md`。  
 - 运行时侧：`langos/runtime/conventions.md`、`langos/runtime/guidelines.md`、`langos/runtime/runtime.md`。  
 - 常见命名/写法/流程说明：
-  - 与 docs 目录/文档结构相关的，沉淀到 `meta/conventions.md`；  
+  - 与 docs 目录/文档结构相关的，沉淀到 `meta/conventions.md`（单一规范源，其他文档引用即可，避免重复描述）；  
   - AI 行为与执行流程相关的，沉淀到 `langos/runtime/conventions.md` 或 `langos/runtime/guidelines.md`。  
 - 重大变更可写 ADR（建议放在 docs 仓 `adr/`）并在 specs 中补充需求说明。

@@ -61,7 +61,7 @@ langos 项目的高层文档仓库，用于存放 **愿景蓝图、设计背景�
 
 ## 3. 目录结构与职责概览
 
-本仓采用按职责划分的目录结构；各目录的详细说明见各自的 `README.md`，这里只做简要概览：
+本节仅作概览，细节规则以 `meta/conventions.md` 为单一规范源；各目录的使用说明见各自的 `README.md`：
 
 - `meta/`  
   - **仓库治理与规范**。  
@@ -130,6 +130,7 @@ langos 项目的高层文档仓库，用于存放 **愿景蓝图、设计背景�
 
 新增或调整文档时，建议遵循：
 
+1. 单一真相源：结构/命名/分类规则以 `meta/conventions.md` 为准，运行时行为以 `../langos/runtime/*` 为准；如发现重复或冲突表述，优先回收并改为指向规范源。  
 1. 先确定文档归属的目录（blueprints / repos / specs / projects / adr / domain / archive / meta）；  
 2. 参照 `meta/conventions.md` 选定文件名与结构；  
 3. 如涉及目录结构变更或分类规则调整，参考 `meta/README.md` 中的“结构变更流程”，必要时配套规格或 ADR；  

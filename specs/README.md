@@ -1,6 +1,7 @@
 # specs 目录说明
 
 存放跨仓或通用的需求规格文档；单个仓库专属的规格可放在 `specs/<repo>/` 子目录（例如 `specs/langos/` 存放内核相关规格）。
+结构、命名等规则以 `meta/conventions.md` 为准，避免在其他文档重复描述。
 
 推荐命名：`YYYYMM-short-name-spec.md`，必要时按主题或仓库分子目录。
 
