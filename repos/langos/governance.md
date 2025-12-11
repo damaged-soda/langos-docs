@@ -4,7 +4,7 @@
 
 ## 1. 核心原则
 - **热插拔风险**：你正在修改你赖以运行的规则。如果把 `dispatch-request` 改坏了，你将无法响应后续指令。
-- **先模拟后实装**：修改任何 YAML 协议前，必须先调用 `simulate_protocol`。
+- **先确认后落盘**：改协议/路由前先形成需求与方案，避免直接热改。
 - **自举循环**：使用 LangOS 的协议来开发 LangOS。
 
 ## 2. 标准自举流程 (SOP)
@@ -14,16 +14,14 @@
    - 在 `specs/langos/` 下创建需求文档（如 `protocol-implementation-spec.md`）。  
    - 明确 triggers, inputs, outputs, safety。
 
-2. **协议设计** (利用 `add_protocol`)  
-   - 生成 YAML 草稿。  
-   - **注意**：不要直接覆盖旧文件，先保存为 `runtime/protocols/drafts/` 或仅在内存中持有。
+2. **方案与设计**  
+   - 设计变更方案，明确路由/接口/风险与防御。
 
-3. **沙盒验证** (利用 `simulate_protocol`)  
-   - 针对草稿进行对话模拟。  
-   - 修正逻辑漏洞。
+3. **实现与验证**  
+   - 按确认的方案直接编辑协议/文档，必要时手动对话模拟关键路径。
 
 4. **实装与索引** (手动或确认后写入)  
-   - 将通过测试的 YAML 移入代码仓的 `runtime/protocols/`。  
+   - 将修改写入代码仓的 `runtime/protocols/`。  
    - 更新 `runtime/protocols/index.yaml`。
 
 5. **文档同步** (利用 `refresh_repo_docs`)  

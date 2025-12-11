@@ -19,7 +19,7 @@ langos/                 ← 代码仓：运行时/协议/必读规范
 2) AI 初始化必读：`runtime/guidelines.md`、`runtime/runtime.md`、`runtime/protocols/index.yaml`。  
 3) 人/AI 对话入口：按 `runtime/startup.md` 先选模式（学习/治理/业务开发）。  
 4) 业务开发时：指定业务文档目录/仓库（如 `langos-docs/` 或其它 docs 仓）；按协议执行需求→方案→编码→评审，关键节点必须确认。  
-5) 改规范/协议：阅读 `runtime/conventions.md` 与目标协议，修改后同步 `runtime/protocols/index.yaml`，必要时用 `simulate_protocol` 沙盒验证。  
+5) 改规范/协议：阅读 `runtime/conventions.md` 与目标协议，修改后同步 `runtime/protocols/index.yaml`，必要时手动对话模拟关键路径。  
 
 ## 其他提示
 - 业务知识/需求/仓库说明请放在独立的业务文档目录/仓库（本仓或其他），保持与代码仓分离。  
