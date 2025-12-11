@@ -99,6 +99,7 @@
    - 按照仓库或主题使用子目录，例如：
      - `specs/langos/` 存放 langos 内核相关规格；
      - 未来可增加 `specs/cross-repo/` 等。
+   - 元信息：每篇 spec 顶部标注 `Status`（draft/active/implemented/superseded/archived）、`Since`（YYYY-MM），必要时补充 `Supersedes`、`Superseded-by`、`Related-ADR`，并在正文列出预期更新的 SOT 文档；详细约束见 `specs/langos/20251211-spec-lifecycle-and-doc-grooming-spec.md`。
 
 3. 架构决策记录（adr）
    - 命名：`YYYYMMDD-short-name.md`，例如：

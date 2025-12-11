@@ -1,5 +1,12 @@
 # 在 doc_root 选定后自动初始化上下文的规格
 
+Status: implemented  
+Since: 2025-12  
+Supersedes: -  
+Superseded-by: -  
+Related-ADR: -  
+SOT: runtime/guidelines.md、runtime/runtime.md（上下文初始化说明）
+
 ## 背景与目标
 - 问题：当前在选择 doc_root 后，AI 仍可能重复询问“这是个什么项目”“有哪些 repo”等基础信息。
 - 目标：doc_root 选定后，运行时自动做一次轻量的上下文初始化，获取项目定位与 repo 清单，避免后续重复问已在文档目录说明的内容。

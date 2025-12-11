@@ -1,4 +1,15 @@
-# langos-docs 分类与 repo/索引职责调整需求规格
+# langos-docs 分类与 repo/索引职责调整需求规格（归档）
+
+Archived: 2025-12-11  
+Original-path: specs/langos/202512-langos-docs-classification-spec.md  
+Archive-reason: 规则已沉淀至 SOT（meta/conventions.md、repos/INDEX.md、repos/langos.md、meta/README.md），日常不需查阅  
+Replacement: meta/conventions.md；repos/INDEX.md；repos/langos.md；meta/README.md  
+Status: archived  
+Since: 2025-12  
+Supersedes: -  
+Superseded-by: -  
+Related-ADR: -  
+SOT: meta/conventions.md、repos/INDEX.md、repos/langos.md、meta/README.md
 
 ## 新增文档前的分类 check-list（执行前自检）
 

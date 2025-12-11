@@ -1,5 +1,12 @@
 # langos 运行时与文档解耦需求规格
 
+Status: implemented  
+Since: 2025-12  
+Supersedes: -  
+Superseded-by: -  
+Related-ADR: -  
+SOT: runtime/startup.md、runtime/guidelines.md、runtime/runtime.md、runtime/protocols/index.yaml、meta/README.md、meta/conventions.md
+
 ## 背景与目标
 - 现状：langos 运行时文档中存在对 docs 仓文档的直接提及/引用，容易让人误以为运行时依赖 docs 才能运转。
 - 目标：澄清“docs 是蓝图产出源，运行时产出后应独立可用”；运行时文档与协议不再指向或依赖 docs 内容即可工作。

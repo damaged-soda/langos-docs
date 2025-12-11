@@ -1,8 +1,11 @@
 # 文档目录初始化协议规格（init_doc_root）
 
-- 状态：草稿
-- 适用范围：langos 运行时新增的“初始化 doc_root 文档库”协议
-- 最近更新：2025-12-11
+Status: implemented  
+Since: 2025-12  
+Supersedes: -  
+Superseded-by: -  
+Related-ADR: -  
+SOT: runtime/protocols/init-doc-root.yaml、runtime/protocols/index.yaml、runtime/guidelines.md、runtime/runtime.md
 
 ## 背景与动机
 - 现状：启动时仅校验 doc_root 是否存在，但未提供在目录不存在、为空或缺失关键子目录时的标准初始化流程。

@@ -1,5 +1,12 @@
 # 多文档目录选择需求规格
 
+Status: implemented  
+Since: 2025-12  
+Supersedes: -  
+Superseded-by: -  
+Related-ADR: -  
+SOT: runtime/startup.md、runtime/guidelines.md、runtime/runtime.md、runtime/protocols/index.yaml
+
 ## 背景与目标
 
 - 现状：启动进入业务开发模式时默认使用单个 `doc_root`，无法在会话内切换或添加其他文档目录。

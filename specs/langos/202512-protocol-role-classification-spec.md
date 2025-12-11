@@ -1,5 +1,12 @@
 # 协议角色（role）轻量分层方案
 
+Status: implemented  
+Since: 2025-12  
+Supersedes: -  
+Superseded-by: -  
+Related-ADR: -  
+SOT: runtime/protocols/index.yaml、runtime/protocols/*.yaml（role 字段）、runtime/guidelines.md
+
 ## 背景与问题
 - 现有所有协议 YAML 视为同层对象，`dispatch_request` 同时承担“核心运行时链路”与“候选协议”双重身份，语义模糊。
 - 运行时候选协议列表可能混入内核链路（例如 `dispatch_request`），与“用户可选择的治理/业务协议”混在一起。
