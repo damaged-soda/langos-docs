@@ -1,6 +1,6 @@
 # LangOS 内核开发与治理规范（背景文档）
 
-本文件描述在“内核模式”下如何安全地修改 LangOS，自举时可参考；运行时最小必读不依赖本文件。
+本文件描述在“内核模式”下如何安全地修改 LangOS，自举时可参考；运行时最小必读不依赖本文件，docs 仅作为设计蓝图与背景。
 
 ## 1. 核心原则
 - **热插拔风险**：你正在修改你赖以运行的规则。如果把 `dispatch-request` 改坏了，你将无法响应后续指令。
@@ -12,7 +12,7 @@
 
 1. **需求定义** (利用 `add_requirement`)  
    - 在 `specs/langos/` 下创建需求文档（如 `protocol-implementation-spec.md`）。  
-   - 明确 triggers, inputs, outputs, safety。
+   - 明确 triggers, inputs, outputs, safety；即便暂未指定 doc_root，需求草稿可先基于最小集完成。
 
 2. **方案与设计**  
    - 设计变更方案，明确路由/接口/风险与防御。
@@ -22,10 +22,11 @@
 
 4. **实装与索引** (手动或确认后写入)  
    - 将修改写入代码仓的 `runtime/protocols/`。  
-   - 更新 `runtime/protocols/index.yaml`。
+   - 更新 `runtime/protocols/index.yaml`。  
+   - 运行时产出后应独立可用；docs 记录蓝图与背景，非运行时依赖。
 
 5. **文档同步** (利用 `refresh_repo_docs`)  
-   - 扫描代码仓 `runtime/` 目录变化，更新 `runtime.md` 或 `guidelines.md`。
+   - 扫描代码仓 `runtime/` 目录变化，更新 `runtime.md` 或 `guidelines.md`；如需补充背景/决策，写入 docs 仓，但保持与运行时解耦。
 
 ## 3. 目录映射（自举时）
 - 业务需求 -> 文档库 `specs/langos/`  

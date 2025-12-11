@@ -1,6 +1,6 @@
 # langos/meta 说明
 
-`langos/meta` 过去用于存放基础规范和元信息，供人类和 AI 在使用业务文档库前了解规则。现迁至文档库，便于与代码仓分离。
+`langos/meta` 过去用于存放基础规范和元信息，供人类和 AI 在使用业务文档库前了解规则。现迁至文档库，便于与代码仓分离；运行时产出后独立可用，docs 主要承载蓝图与背景。
 
 它回答的问题：
 
@@ -12,10 +12,10 @@
 
 ## 快速导航
 - 顶层目录地图与最小使用路径：见 `repos/langos/overview.md`。  
-- AI 初始化必读：`langos/runtime/guidelines.md`、`langos/runtime/runtime.md`、`langos/runtime/protocols/index.yaml`（在代码仓）。  
+- AI 初始化必读：`langos/runtime/guidelines.md`、`langos/runtime/runtime.md`、`langos/runtime/protocols/index.yaml`（在代码仓，最小集即可运行）。  
 - 启动对话提示：`langos/runtime/startup.md`（代码仓）。  
 - 内核治理与自举：`repos/langos/governance.md`（背景文档）。  
-- 业务资产位置：由你指定的业务文档目录/仓库（例：本 docs 仓、或工作区的 `workspace/` 目录等），与代码仓分离。
+- 业务资产位置：由你指定的业务文档目录/仓库（例：本 docs 仓、或工作区的 `workspace/` 目录等），与代码仓分离；doc_root 缺省时可先按最小集工作，需读取业务/背景文档再指定。
 
 ## 目录内容
 - `conventions`（代码仓 `langos/runtime/conventions.md`）：基础规范（命名/写作/AI 底线）。  
