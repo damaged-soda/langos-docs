@@ -111,6 +111,6 @@ Related-ADR: -
 ## 8. 验收标准（初版）
 
 - 任一 doc_root 的 specs/ 新增的 spec 头部都有 Status/Since 等元信息，正文列出预期更新的 SOT 列表。
-- 最近落地的 spec（如 202512-init-doc-root-protocol-spec.md、202512-multi-doc-root-selection-spec.md 等）对应 SOT 已更新，且这些 spec 的状态为 implemented，替代关系已填。
+- 最近落地的 spec（如 20251211-init-doc-root-protocol-spec.md、20251211-multi-doc-root-selection-spec.md 等）对应 SOT 已更新，且这些 spec 的状态为 implemented，替代关系已填。
 - 在 doc_root 的 meta/conventions.md 或 specs/README.md 中补充了：spec 状态字段的使用约定、SOT 优先级规则的简述。
 - 至少有一次文档治理项目实例：projects/ 下存在治理项目目录，记录清理旧 spec；部分历史 spec 已迁移 archive/，文件头含来源/归档原因/替代路径。

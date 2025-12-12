@@ -93,9 +93,10 @@
    - README 中避免堆过多细节，更多细节交给下层文档。
 
 2. 规格（specs）
-   - 建议命名：`YYYYMM-topic-spec.md`，例如：
-     - `202512-langos-docs-classification-spec.md`
-     - `202512-langos-runtime-docs-decoupling-spec.md`
+   - 统一命名：`YYYYMMDD-topic-spec.md`，日期必填到日。示例：
+     - `20251211-langos-docs-classification-spec.md`
+     - `20251211-langos-runtime-docs-decoupling-spec.md`
+   - 迁移要求：存量仅到月份的文件（如 `202512-*`）应补全为对应日粒度（本批次统一使用 `20251211-*`），后续新增不得省略日期。
    - 按照仓库或主题使用子目录，例如：
      - `specs/langos/` 存放 langos 内核相关规格；
      - 未来可增加 `specs/cross-repo/` 等。

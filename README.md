@@ -6,7 +6,7 @@ langos 项目的蓝图/规格/治理文档，运行时代码在 `../langos/`，�
 
 - 愿景/分层蓝图 → `blueprints/`（如 `meta-intro.md`、`vision.md`）
 - 文档分类/命名规则 → `meta/conventions.md`
-- doc_root 与运行时解耦原则 → `blueprints/meta-intro.md` + `specs/langos/langos-runtime-docs-decoupling-spec.md`
+- doc_root 与运行时解耦原则 → `blueprints/meta-intro.md` + `specs/langos/20251211-langos-runtime-docs-decoupling-spec.md`
 - 仓库概览与导航 → `repos/`（如 `repos/langos.md`）
 - 需求/设计规格 → `specs/`（仓库专属可用子目录）
 - 项目计划/进展 → `projects/`

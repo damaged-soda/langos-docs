@@ -2,7 +2,7 @@
 
 ## 背景
 - `specs/langos/20251211-spec-lifecycle-and-doc-grooming-spec.md` 要求对任意 doc_root 的 specs 引入状态模型、SOT 优先级与整理触发点。
-- 现有 specs（如 202512-*）部分尚未标注状态或与 SOT 的映射，缺乏集中清理计划。
+- 现有 specs（如 20251211-*）部分尚未标注状态或与 SOT 的映射，缺乏集中清理计划。
 - 目的：以 langos 运行时当前使用的 doc_root（默认 `langos-docs`）为起点，建立可复用的整理流程。
 
 ## 目标

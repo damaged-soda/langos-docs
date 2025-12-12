@@ -101,7 +101,7 @@ docs 仓怎么写 / 怎么分类 → 看 `meta/`。
    - 在 PR 或变更描述中，说明新旧结构的差异及迁移关系。
 
 参考现有示例：  
-`specs/langos/202512-langos-docs-classification-spec.md` 记录了上一轮分类与 repos/职责调整。
+`specs/langos/20251211-langos-docs-classification-spec.md`（已归档至 `archive/specs/langos/`）记录了上一轮分类与 repos/职责调整。
 
 ### 3.3 改变“langos ↔ docs 解耦”相关原则
 
@@ -110,7 +110,7 @@ docs 仓怎么写 / 怎么分类 → 看 `meta/`。
 因为这类变更直接影响运行时心智模型，建议：
 
 1. 必须先在 `specs/langos/` 写或更新对应规格，例如更新：
-   - `langos-runtime-docs-decoupling-spec.md`，或新增新的解耦/耦合规格。
+  - `20251211-langos-runtime-docs-decoupling-spec.md`，或新增新的解耦/耦合规格。
 2. 再根据规格调整：
    - `langos/runtime/*.md` 中的表述；
    - 本仓相关蓝图（如 `blueprints/meta-intro.md`、`blueprints/vision.md`）；
