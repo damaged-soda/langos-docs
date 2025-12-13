@@ -1,4 +1,6 @@
 # langos-docs
+Doc Root Version: v0.0.0
+Last Updated: 2025-12-13
 
 langos 项目的蓝图/规格/治理文档，运行时代码在 `../langos/`，本仓不在运行时最小集内。
 
