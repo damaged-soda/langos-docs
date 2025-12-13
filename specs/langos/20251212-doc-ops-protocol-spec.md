@@ -1,6 +1,6 @@
 # 统一文档操作协议（doc\_ops）需求规格
 
-Status: draft  
+Status: implemented  
 Since: 2025-12  
 Supersedes: -  
 Superseded-by: -  

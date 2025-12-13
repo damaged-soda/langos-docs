@@ -1,6 +1,6 @@
 # spec 生命周期与文档整理治理需求规格
 
-Status: active  
+Status: implemented  
 Since: 2025-12  
 Supersedes: -  
 Superseded-by: -  

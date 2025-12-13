@@ -1,6 +1,6 @@
 # 需求实现协议（implement_requirement）规格
 
-Status: draft  
+Status: implemented  
 Since: 2025-12  
 Supersedes: -  
 Superseded-by: -  
@@ -51,7 +51,7 @@ SOT: runtime/protocols/implement-requirement.yaml、runtime/protocols/index.yaml
    - 运行约定测试或提供可执行命令；记录结果与覆盖范围，未跑通需列明原因与风险。  
 6) 文档与规格更新（DOC_UPDATE）  
    - 方案文档落盘：默认写入 `specs/<repo>/YYYYMMDD-topic-solution-spec.md`（或 `-design-spec`），含方案要点/决策/风险/验收。  
-   - 若实现导致文档/导航更新，生成 doc_ops/refresh_repo_docs 的补丁草稿；对需求规格更新状态（如从 active → implemented）给出建议。  
+   - 若实现导致文档/导航更新，生成 doc_ops/refresh_repo_docs 的补丁草稿；对需求/方案规格提供状态更新补丁或建议（如 active → implemented），并在需求/方案文档间互相引用。  
 7) 收尾与交付（CONFIRM_AND_SUMMARIZE）  
    - 总结改动、测试结果、已/待更新文档、已确认/待确认事项、后续行动；经确认后可落盘或交由人手动合并。
 
@@ -65,7 +65,7 @@ SOT: runtime/protocols/implement-requirement.yaml、runtime/protocols/index.yaml
 ### 5.5 输出物
 - 确认的方案与任务分解清单（含风险/假设）。
 - 可复制的代码补丁与测试命令/结果。
-- 方案文档草稿及其他文档更新草稿，需求规格状态调整建议。
+- 方案文档草稿及其他文档更新草稿，需求/方案规格状态更新补丁或建议（含 active→implemented、互链）。
 - 结项总结（变更说明、未决事项、后续 TODO）。
 
 ### 5.6 与现有协议的关系
@@ -90,7 +90,7 @@ SOT: runtime/protocols/implement-requirement.yaml、runtime/protocols/index.yaml
 - `runtime/protocols/index.yaml` 已登记，role 为 feature（或约定值），包含触发例句。
 - 方案文档默认落盘路径与命名建议已明确（specs/<repo>/YYYYMMDD-*-solution-spec.md|design-spec.md），并在 docs 规范中同步写明。
 - 运行时文档（runtime/runtime.md 或 protocols/README.md）中简述该协议的定位与默认流程。
-- 示例落地：能以已存在的需求规格为输入，输出方案、补丁草稿、测试计划与收尾总结。
+- 示例落地：能以已存在的需求规格为输入，输出方案、补丁草稿、测试计划与收尾总结，并给出需求/方案规格状态更新（如 active→implemented）的补丁或明确指引。
 
 ## 7. 后续演进
 - 视使用情况补充自动化检查单（如常见风险模板）、与 CI/发布流程的挂钩。
