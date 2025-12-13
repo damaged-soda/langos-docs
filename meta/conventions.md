@@ -93,9 +93,10 @@
    - README 中避免堆过多细节，更多细节交给下层文档。
 
 2. 规格（specs）
-   - 统一命名：`YYYYMMDD-topic-spec.md`，日期必填到日。示例：
+   - 统一命名：`YYYYMMDD-topic-spec.md`，日期必填到日，适用于需求/设计/技术方案文档。示例：
      - `20251211-langos-docs-classification-spec.md`
      - `20251211-langos-runtime-docs-decoupling-spec.md`
+   - 技术方案/设计文档可在 topic 后追加后缀：`YYYYMMDD-topic-solution-spec.md` 或 `YYYYMMDD-topic-design-spec.md`，命名与需求规格一致，存放路径同样使用 `specs/` 或 `specs/<repo>/`。
    - 迁移要求：存量仅到月份的文件（如 `202512-*`）应补全为对应日粒度（本批次统一使用 `20251211-*`），后续新增不得省略日期。
    - 按照仓库或主题使用子目录，例如：
      - `specs/langos/` 存放 langos 内核相关规格；
